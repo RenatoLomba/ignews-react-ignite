@@ -38,7 +38,7 @@ const Home: NextPage<HomeProps> = ({ product }) => {
               for {product.amountFormatted} {product.recurringInterval}
             </span>
           </p>
-          <SubscribeButton priceId={product.priceId} />
+          <SubscribeButton />
         </section>
 
         <Image

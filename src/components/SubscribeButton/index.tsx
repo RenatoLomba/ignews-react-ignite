@@ -5,15 +5,11 @@ import { api } from '../../services/api';
 import { getStripeJs } from '../../services/stripe-client';
 import styles from './styles.module.scss';
 
-type SubscribeButtonProps = {
-  priceId: string;
-};
-
 type SubscribeResponse = {
   sessionId: string;
 };
 
-const SubscribeButton: FC<SubscribeButtonProps> = ({ priceId }) => {
+const SubscribeButton: FC = () => {
   const { push } = useRouter();
   const { data: session } = useSession();
 
